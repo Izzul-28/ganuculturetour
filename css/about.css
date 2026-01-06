@@ -20,13 +20,14 @@
 .about-text p {
   line-height: 1.8;
   margin-bottom: 15px;
-  text-align: justify;   /* neat alignment for long intro text */
+  text-align: justify;
 }
 
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;    /* optional: rounded corners */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* optional: subtle shadow */
+.about-image iframe {
+  width: 120%;
+  height: 650px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-right: 60px;
+  margin-top: 60px;
 }

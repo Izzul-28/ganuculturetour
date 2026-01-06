@@ -21,15 +21,11 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
-$(document).ready(function() {
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+}
 
-  $(`[unique-script-id="w-w-dm-id"] .btn-box`).click(function() {
-    $(this).parent().children(".overlay").show();
-
-  });
-
-
-  $(`[unique-script-id="w-w-dm-id"] .close`).click(function() {
-    $(".overlay").hide();
-  });
-});
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
